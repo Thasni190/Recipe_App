@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#2b1d0f] text-white">
+
+    <!-- Header -->
+    <header class="bg-gray-900 p-5">
+        <nav class="container mx-auto flex flex-wrap items-center justify-between">
+            <h1 class="text-2xl font-bold uppercase tracking-wider">Recipe App</h1>
+
+            <form class="flex w-full md:w-auto mt-4 md:mt-0">
+                <input type="text" placeholder="Search"
+                    class="Searchbox w-full md:w-64 p-2 text-black rounded-l-md focus:outline-none">
+                <button
+                    class=" SearchBtn bg-blue-600 px-4 py-2 text-white font-semibold rounded-r-md hover:bg-blue-700 transition">
+                    Search
+                </button>
+            </form>
+        </nav>
+    </header>
+
+
+    <!-- <main class="container mx-auto p-6 text-center">
+        <section>
+            <h2 class="text-xl md:text-2xl font-semibold text-black mb-4">Search your favorite recipes</h2>
+            <div class="recipe-container grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+            </div>
+            <div class="recipe-details">
+                <button type="button" class="recipe-close-btn">X</button>
+            </div>
+            <div class="recipe-details-content">
+
+            </div>
+        </section>
+    </main> -->
+
+    <main class="container mx-auto p-6 text-center">
+        <section>
+            <h2 class="text-xl md:text-2xl font-semibold text-black mb-4">Search your favorite recipes</h2>
+            <div class="recipe-container grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Recipe cards will be dynamically inserted here -->
+            </div>
+
+            <!-- Recipe Popup Modal -->
+            <div class="recipe-details fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-lg relative">
+                    <button
+                        class="recipe-close-btn absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded-full">
+                        X
+                    </button>
+                    <div class="recipe-details-content text-center">
+                        <!-- Recipe details will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="Index.js"></script>
+
+</html>
